@@ -5,11 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
-/**
- * 購入データ
- * @author d-yamaguchi
- *
- */
+
 public class BuyDataBeans  implements Serializable {
 	private int id;
 	private int userId;

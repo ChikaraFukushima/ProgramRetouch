@@ -2,11 +2,7 @@ package beans;
 
 import java.io.Serializable;
 
-/**
- * アイテム
- * @author d-yamaguchi
- *
- */
+
 public class ItemDataBeans implements Serializable {
 	private int id;
 	private String name;
