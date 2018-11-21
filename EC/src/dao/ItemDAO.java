@@ -118,9 +118,10 @@ public class ItemDAO {
 				st.setInt(1, startiItemNum);
 				st.setInt(2, pageMaxItemCount);
 			} else {
-				// 商品名検索
-				st = con.prepareStatement("SELECT * FROM m_item WHERE name = ?  ORDER BY id ASC LIMIT ?,? ");
-				st.setString(1,searchWord);
+				// 商品名検索                                             //修正↓LIKE追加11/22
+				st = con.prepareStatement("SELECT * FROM m_item WHERE name LIKE ?  ORDER BY id ASC LIMIT ?,? ");
+				//修正元(1,searchWord);
+				st.setString(1,"%"+searchWord+"%");
 				st.setInt(2, startiItemNum);
 				st.setInt(3, pageMaxItemCount);
 			}
