@@ -12,7 +12,7 @@ import beans.ItemDataBeans;
 
 /**
  *
- * @author d-yamaguchi
+ * @author
  *
  */
 public class BuyDetailDAO {
