@@ -33,7 +33,7 @@
 								<tr>
 									<td class="center">${bd.formatDate}</td>
 									<td class="center">${bd.deliveryMethodName}</td>
-									<td class="center">${bd.totalPrice}円</td>
+									<td class="center">${bd.totalPrice+bd.deliveryMethodPrice}円</td>
 								</tr>
 							</tbody>
 						</table>
@@ -57,7 +57,7 @@
 							<c:forEach var = "i" items = "${buyIDBList}">
 								<tr>
 									<td class="center">${i.name}</td>
-									<td class="center">${bd.totalPrice-bd.deliveryMethodPrice}円</td>
+									<td class="center">${i.price}円</td>
 								</tr>
 								</c:forEach>
 								<tr>
